@@ -2031,4 +2031,209 @@ a {
   }
 }
 
+/* ═══════════════ WHAT I OFFER (SERVICES TIMELINE) ═══════════════ */
+.offer-sec {
+  background: linear-gradient(135deg, rgba(255, 179, 71, 0.02), rgba(102, 126, 234, 0.02));
+  position: relative;
+  overflow: hidden;
+}
+
+.offer-timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 40px auto 0;
+  padding: 40px 0;
+}
+
+/* Vertical timeline center line */
+.offer-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background-color: var(--border-color);
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.offer-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  width: 100%;
+  position: relative;
+}
+
+/* Alternate offer-item layouts */
+.offer-item:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+/* Timeline dot indicator */
+.offer-indicator {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--card-bg);
+  border: var(--brutal-border);
+  z-index: 2;
+  box-shadow: 2px 2px 0 var(--border-color);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.offer-dot {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--border-color);
+  margin: 5px auto 0;
+  transition: background-color 0.3s;
+}
+
+.offer-item.active .offer-indicator {
+  background-color: var(--yellow-accent);
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.offer-item.active .offer-dot {
+  background-color: var(--primary-color);
+}
+
+/* Offer Card Styling */
+.offer-card {
+  width: 45%;
+  background-color: var(--card-bg);
+  border: var(--brutal-border);
+  padding: 30px;
+  box-shadow: var(--brutal-shadow);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s;
+  position: relative;
+  z-index: 2;
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 0 var(--border-color);
+}
+
+/* Custom colors for card borders */
+.mern-card { border-color: #61dafb; }
+.api-card { border-color: #34d399; }
+.frontend-card { border-color: #ec4899; }
+.devops-card { border-color: #ff3b30; }
+
+.offer-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  animation: float 3s ease-in-out infinite;
+  display: inline-block;
+}
+
+.offer-title {
+  font-size: 1.8rem;
+  font-family: var(--font-heading);
+  margin-bottom: 15px;
+}
+
+.offer-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.85;
+  margin-bottom: 20px;
+}
+
+.offer-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.offer-features li {
+  font-size: 0.9rem;
+  padding-left: 20px;
+  position: relative;
+}
+
+.offer-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+/* Scroll Animation classes */
+.offer-item .offer-card {
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Odd items slide in from left */
+.offer-item:nth-child(odd) .offer-card {
+  transform: translateX(-50px);
+}
+
+/* Even items slide in from right */
+.offer-item:nth-child(even) .offer-card {
+  transform: translateX(50px);
+}
+
+/* Active animated state */
+.offer-item.active .offer-card {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ━━━━━━ RESPONSIVE OFFER SECTION ━━━━━━ */
+@media (max-width: 768px) {
+  .offer-timeline::before {
+    left: 20px;
+  }
+  
+  .offer-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 45px;
+    margin-bottom: 40px;
+  }
+  
+  .offer-item:nth-child(odd) {
+    flex-direction: column;
+  }
+  
+  .offer-indicator {
+    left: 20px;
+    top: 30px;
+    transform: translate(-50%, 0);
+  }
+  
+  .offer-item.active .offer-indicator {
+    transform: translate(-50%, 0) scale(1.2);
+  }
+  
+  .offer-card {
+    width: 100%;
+  }
+  
+  .offer-item:nth-child(odd) .offer-card,
+  .offer-item:nth-child(even) .offer-card {
+    transform: translateY(30px);
+  }
+  
+  .offer-item.active .offer-card {
+    transform: translateY(0);
+  }
+}
+
 

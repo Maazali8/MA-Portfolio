@@ -3,12 +3,61 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Muhammad Saadi – Full Stack Developer specializing in MERN stack, React, and Node.js"/>
+  <meta name="description" content="Muhammad Saadi – Full Stack Developer specializing in the MERN stack, React, and Node.js. Building scalable and highly responsive web applications."/>
+  <meta name="keywords" content="Muhammad Saadi, Full Stack Developer, MERN Stack, React Developer, Node.js, JavaScript Developer, portfolio, Pakistan"/>
+  <meta name="author" content="Muhammad Saadi"/>
   <title>Muhammad Saadi | Full Stack Developer</title>
+  
+  <!-- SEO & Robots -->
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://muhammadsaadi.dev" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://muhammadsaadi.dev" />
+  <meta property="og:title" content="Muhammad Saadi | Full Stack Developer" />
+  <meta property="og:description" content="Muhammad Saadi – Full Stack Developer specializing in MERN stack, React, and Node.js. Explore featured full stack web projects." />
+  <meta property="og:image" content="https://muhammadsaadi.dev/images/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://muhammadsaadi.dev" />
+  <meta name="twitter:title" content="Muhammad Saadi | Full Stack Developer" />
+  <meta name="twitter:description" content="Muhammad Saadi – Full Stack Developer specializing in MERN stack, React, and Node.js. Explore featured full stack web projects." />
+  <meta name="twitter:image" content="https://muhammadsaadi.dev/images/og-image.png" />
+
+  <!-- Fonts & Stylesheet -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
+
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Muhammad Saadi",
+    "jobTitle": "Full Stack Web Developer",
+    "url": "https://muhammadsaadi.dev",
+    "sameAs": [
+      "https://github.com",
+      "https://linkedin.com"
+    ],
+    "description": "Full Stack Developer specializing in React, Node.js, Express, and MongoDB.",
+    "knowsAbout": [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JavaScript",
+      "TypeScript",
+      "REST APIs",
+      "DevOps",
+      "Tailwind CSS"
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -27,8 +76,9 @@
     <ul class="overlay-links">
       <li><a href="#home"     class="ol-link" id="ol1"><span class="ol-num">01</span>HOME</a></li>
       <li><a href="#about"    class="ol-link" id="ol2"><span class="ol-num">02</span>ABOUT</a></li>
-      <li><a href="#projects" class="ol-link" id="ol3"><span class="ol-num">03</span>PROJECTS</a></li>
-      <li><a href="#contact"  class="ol-link" id="ol4"><span class="ol-num">04</span>CONTACT</a></li>
+      <li><a href="#offer"    class="ol-link" id="ol-offer"><span class="ol-num">03</span>SERVICES</a></li>
+      <li><a href="#projects" class="ol-link" id="ol3"><span class="ol-num">04</span>PROJECTS</a></li>
+      <li><a href="#contact"  class="ol-link" id="ol4"><span class="ol-num">05</span>CONTACT</a></li>
     </ul>
     <div class="overlay-socials">
       <p class="soc-heading">Socials</p>
@@ -314,6 +364,83 @@
     </div>
   </section>
 
+  <!-- ═══════════════ WHAT I OFFER ═══════════════ -->
+  <section class="section offer-sec" id="offer">
+    <div class="container">
+      <div class="sec-tag">My Services</div>
+      <h2 class="sec-h">What I <span class="red-txt">Offer</span></h2>
+      
+      <div class="offer-timeline">
+        <!-- Service Card 1 -->
+        <div class="offer-item" data-aos="fade-up">
+          <div class="offer-indicator">
+            <span class="offer-dot"></span>
+          </div>
+          <div class="offer-card mern-card">
+            <div class="offer-icon">⚛️</div>
+            <h3 class="offer-title">Full-Stack MERN Development</h3>
+            <p class="offer-desc">Building robust, end-to-end web applications with React, Node.js, Express, and MongoDB. Fast, responsive, and tailored to your specifications.</p>
+            <ul class="offer-features">
+              <li>SPA & SSR Web Applications</li>
+              <li>State Management (Redux/Context API)</li>
+              <li>Real-time apps with WebSockets</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="offer-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="offer-indicator">
+            <span class="offer-dot"></span>
+          </div>
+          <div class="offer-card api-card">
+            <div class="offer-icon">⚙️</div>
+            <h3 class="offer-title">API & Backend Architecture</h3>
+            <p class="offer-desc">Designing clean, secure, and scalable backend architectures. Implementing high-performance RESTful APIs and securing them with OAuth and JWT.</p>
+            <ul class="offer-features">
+              <li>RESTful & GraphQL API Design</li>
+              <li>Authentication & Session Management</li>
+              <li>Microservices & Third-party Integrations</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="offer-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="offer-indicator">
+            <span class="offer-dot"></span>
+          </div>
+          <div class="offer-card frontend-card">
+            <div class="offer-icon">🎨</div>
+            <h3 class="offer-title">UI/UX & Frontend Engineering</h3>
+            <p class="offer-desc">Transforming designs into high-fidelity, pixel-perfect web interfaces. Prioritizing performance, usability, accessibility, and dynamic micro-animations.</p>
+            <ul class="offer-features">
+              <li>Responsive Desktop/Mobile Layouts</li>
+              <li>Modern CSS & Interactions</li>
+              <li>Web Accessibility (WCAG compliant)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="offer-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="offer-indicator">
+            <span class="offer-dot"></span>
+          </div>
+          <div class="offer-card devops-card">
+            <div class="offer-icon">🚀</div>
+            <h3 class="offer-title">DevOps, Testing & Deployment</h3>
+            <p class="offer-desc">Ensuring high-quality releases with automated testing pipelines and seamless, zero-downtime cloud deployments.</p>
+            <ul class="offer-features">
+              <li>CI/CD Setup (GitHub Actions)</li>
+              <li>Cloud Hosting (AWS, Vercel, Netlify)</li>
+              <li>Unit & Integration Testing (Jest, Playwright)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ═══════════════ ABOUT ═══════════════ -->
   <section class="section about-sec" id="about">

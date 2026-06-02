@@ -406,7 +406,32 @@ class ProjectStepsTimeline {
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
     new ProjectStepsTimeline();
+    initOfferTimeline();
   });
 } else {
   new ProjectStepsTimeline();
+  initOfferTimeline();
+}
+
+// ═══════════════ SERVICES TIMELINE ANIMATION ═══════════════
+function initOfferTimeline() {
+  const offerItems = document.querySelectorAll('.offer-item');
+  if (offerItems.length === 0) return;
+
+  const observerOptions = {
+    threshold: 0.15,
+    rootMargin: "0px 0px -80px 0px"
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, observerOptions);
+
+  offerItems.forEach(item => {
+    observer.observe(item);
+  });
 }
