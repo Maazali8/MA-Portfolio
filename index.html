@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Muhammad Saadi – Full Stack Developer specializing in MERN stack, React, and Node.js"/>
+  <title>Muhammad Saadi | Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="logo">&lt;Saadi/&gt;</a>
+    <div class="nav-right">
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">🌙</button>
+      <button class="menu-btn" id="menuBtn">Menu <span class="plus">+</span></button>
+    </div>
+  </nav>
+
+  <!-- MENU OVERLAY -->
+  <div class="menu-overlay" id="menuOverlay">
+    <button class="close-btn" id="closeBtn">Close ✕</button>
+    <ul class="overlay-links">
+      <li><a href="#home"     class="ol-link" id="ol1"><span class="ol-num">01</span>HOME</a></li>
+      <li><a href="#about"    class="ol-link" id="ol2"><span class="ol-num">02</span>ABOUT</a></li>
+      <li><a href="#projects" class="ol-link" id="ol3"><span class="ol-num">03</span>PROJECTS</a></li>
+      <li><a href="#contact"  class="ol-link" id="ol4"><span class="ol-num">04</span>CONTACT</a></li>
+    </ul>
+    <div class="overlay-socials">
+      <p class="soc-heading">Socials</p>
+      <div class="soc-links">
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com"   target="_blank" rel="noopener">GitHub</a>
+        <a href="https://wa.me/"       target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- BACK TO TOP -->
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero" id="home">
+    <div class="deco-circle c1"></div>
+    <div class="deco-circle c2"></div>
+    <div class="hero-inner">
+
+      <!-- Left -->
+      <div class="hero-left">
+        <div class="hero-badge">👋 Welcome to my portfolio</div>
+        <h1 class="hero-name">Hi, I'm<br><span class="red-txt">Muhammad</span><br>Saadi</h1>
+        <div class="red-line"></div>
+        <p class="exclaim">!</p>
+        <div class="hero-role">
+          <span id="typewriter"></span><span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-bio">I'm a Full Stack Developer specialized in the MERN stack — building fast, scalable, and beautiful web applications with clean code and seamless deployments.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">See Projects →</a>
+          <a href="#about"    class="btn btn-ghost">Learn More</a>
+          <a href="cv.pdf" download class="btn btn-yellow">⬇ Download CV</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-card"><span class="sn">5+</span><span class="sl">Years Exp</span></div>
+          <div class="stat-card"><span class="sn">30+</span><span class="sl">Projects</span></div>
+          <div class="stat-card"><span class="sn">10+</span><span class="sl">Clients</span></div>
+        </div>
+      </div>
+
+      <!-- Right: Polaroid -->
+      <div class="hero-right">
+        <svg class="deco-arr" viewBox="0 0 40 100" fill="none">
+          <path d="M20 0 Q20 55 20 75 M12 62 L20 78 L28 62" stroke="currentColor" stroke-width="2.5" stroke-dasharray="6 4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="polaroid">
+          <div class="pol-tape"></div>
+          <div class="pol-avatar">MS</div>
+          <div class="pol-name">Saadi</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PROJECT STEPS TIMELINE ═══════════════ -->
+  <section class="project-steps-section" id="steps">
+    <div class="steps-container">
+      <!-- Header -->
+      <div class="steps-header">
+        <div class="sec-tag">My Process</div>
+        <h2 class="sec-h">Project <span class="red-txt">Steps</span></h2>
+        <p class="steps-subtitle">A structured approach to delivering exceptional results</p>
+      </div>
+
+      <!-- Timeline Component -->
+      <div class="steps-timeline" id="stepsTimeline">
+        <!-- Top Navigation: Horizontal Stepper -->
+        <div class="steps-top-nav">
+          <div class="steps-stepper">
+            <!-- Step 1: Discovery -->
+            <button class="step-button" data-step="0" aria-label="Step 1: Discovery">
+              <div class="step-indicator">
+                <span class="step-icon">🔍</span>
+              </div>
+              <span class="step-label">Discovery</span>
+              <div class="step-connector"></div>
+            </button>
+
+            <!-- Step 2: Planning -->
+            <button class="step-button" data-step="1" aria-label="Step 2: Planning">
+              <div class="step-indicator">
+                <span class="step-icon">📋</span>
+              </div>
+              <span class="step-label">Planning</span>
+              <div class="step-connector"></div>
+            </button>
+
+            <!-- Step 3: Design -->
+            <button class="step-button" data-step="2" aria-label="Step 3: Design">
+              <div class="step-indicator">
+                <span class="step-icon">🎨</span>
+              </div>
+              <span class="step-label">Design</span>
+              <div class="step-connector"></div>
+            </button>
+
+            <!-- Step 4: Development -->
+            <button class="step-button" data-step="3" aria-label="Step 4: Development">
+              <div class="step-indicator">
+                <span class="step-icon">💻</span>
+              </div>
+              <span class="step-label">Development</span>
+              <div class="step-connector"></div>
+            </button>
+
+            <!-- Step 5: Testing -->
+            <button class="step-button" data-step="4" aria-label="Step 5: Testing">
+              <div class="step-indicator">
+                <span class="step-icon">🧪</span>
+              </div>
+              <span class="step-label">Testing</span>
+              <div class="step-connector"></div>
+            </button>
+
+            <!-- Step 6: Launch -->
+            <button class="step-button" data-step="5" aria-label="Step 6: Launch">
+              <div class="step-indicator">
+                <span class="step-icon">🚀</span>
+              </div>
+              <span class="step-label">Launch</span>
+              <div class="step-connector"></div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Bottom Content: Split View -->
+        <div class="steps-content">
+          <div class="steps-content-wrapper">
+            <!-- Left Side: Details -->
+            <div class="steps-left">
+              <div class="step-content-item" data-content="0">
+                <div class="step-number">01</div>
+                <h3 class="step-content-title">Discovery</h3>
+                <p class="step-content-desc">Understanding your vision, goals, and requirements through in-depth analysis and research.</p>
+                <ul class="step-content-list">
+                  <li>Requirements Gathering</li>
+                  <li>Stakeholder Interviews</li>
+                  <li>Competitive Analysis</li>
+                  <li>Market Research</li>
+                </ul>
+              </div>
+
+              <div class="step-content-item" data-content="1">
+                <div class="step-number">02</div>
+                <h3 class="step-content-title">Planning</h3>
+                <p class="step-content-desc">Creating a detailed roadmap and strategy for project execution with clear timelines.</p>
+                <ul class="step-content-list">
+                  <li>Project Scope Definition</li>
+                  <li>Timeline Creation</li>
+                  <li>Resource Allocation</li>
+                  <li>Risk Assessment</li>
+                </ul>
+              </div>
+
+              <div class="step-content-item" data-content="2">
+                <div class="step-number">03</div>
+                <h3 class="step-content-title">Design</h3>
+                <p class="step-content-desc">Transforming ideas into beautiful, user-centric designs with wireframes and prototypes.</p>
+                <ul class="step-content-list">
+                  <li>Wireframing</li>
+                  <li>Visual Design</li>
+                  <li>Prototype Creation</li>
+                  <li>User Testing</li>
+                </ul>
+              </div>
+
+              <div class="step-content-item" data-content="3">
+                <div class="step-number">04</div>
+                <h3 class="step-content-title">Development</h3>
+                <p class="step-content-desc">Building scalable, performant solutions using modern technologies and best practices.</p>
+                <ul class="step-content-list">
+                  <li>Frontend Development</li>
+                  <li>Backend Architecture</li>
+                  <li>Database Design</li>
+                  <li>API Integration</li>
+                </ul>
+              </div>
+
+              <div class="step-content-item" data-content="4">
+                <div class="step-number">05</div>
+                <h3 class="step-content-title">Testing</h3>
+                <p class="step-content-desc">Rigorous quality assurance ensuring zero critical bugs and optimal performance.</p>
+                <ul class="step-content-list">
+                  <li>Unit Testing</li>
+                  <li>Integration Testing</li>
+                  <li>Performance Testing</li>
+                  <li>Security Audit</li>
+                </ul>
+              </div>
+
+              <div class="step-content-item" data-content="5">
+                <div class="step-number">06</div>
+                <h3 class="step-content-title">Launch</h3>
+                <p class="step-content-desc">Seamless deployment with monitoring, support, and continuous optimization post-launch.</p>
+                <ul class="step-content-list">
+                  <li>Deployment Setup</li>
+                  <li>Performance Monitoring</li>
+                  <li>Launch Support</li>
+                  <li>Post-Launch Optimization</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Right Side: Visual Cards -->
+            <div class="steps-right">
+              <div class="step-visual-item" data-visual="0">
+                <div class="visual-card discovery-card">
+                  <div class="visual-icon">🔍</div>
+                  <div class="visual-content">
+                    <h4>Discovery Phase</h4>
+                    <p>Deep dive into understanding the project requirements and market landscape</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-visual-item" data-visual="1">
+                <div class="visual-card planning-card">
+                  <div class="visual-icon">📋</div>
+                  <div class="visual-content">
+                    <h4>Planning Phase</h4>
+                    <p>Creating comprehensive roadmaps and resource allocation strategies</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-visual-item" data-visual="2">
+                <div class="visual-card design-card">
+                  <div class="visual-icon">🎨</div>
+                  <div class="visual-content">
+                    <h4>Design Phase</h4>
+                    <p>Crafting beautiful and intuitive user experiences with precision</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-visual-item" data-visual="3">
+                <div class="visual-card development-card">
+                  <div class="visual-icon">💻</div>
+                  <div class="visual-content">
+                    <h4>Development Phase</h4>
+                    <p>Building robust, scalable solutions with cutting-edge technologies</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-visual-item" data-visual="4">
+                <div class="visual-card testing-card">
+                  <div class="visual-icon">🧪</div>
+                  <div class="visual-content">
+                    <h4>Testing Phase</h4>
+                    <p>Ensuring quality through comprehensive testing and validation</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-visual-item" data-visual="5">
+                <div class="visual-card launch-card">
+                  <div class="visual-icon">🚀</div>
+                  <div class="visual-content">
+                    <h4>Launch Phase</h4>
+                    <p>Going live with monitoring and continuous optimization</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Auto-play Controls -->
+        <div class="steps-controls">
+          <button class="control-btn" id="playPauseBtn" aria-label="Play/Pause">
+            <span class="control-icon">▶</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════ ABOUT ═══════════════ -->
+  <section class="section about-sec" id="about">
+    <div class="container">
+      <div class="sec-tag">Who Am I</div>
+      <h2 class="sec-h">About <span class="red-txt">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text" data-aos="fade-right">
+          <p>I'm a passionate Full Stack Developer with 5+ years of experience building production-ready web applications. I specialize in the MERN stack and love crafting seamless user experiences backed by robust APIs.</p>
+          <p>My workflow emphasizes clean code, automated testing, and reliable CI/CD. I believe great software isn't just about features — it's about longevity, maintainability, and performance.</p>
+          <p>When I'm not coding, I explore new tech, contribute to open source, and mentor junior developers.</p>
+        </div>
+        <div class="skills-wrap" data-aos="fade-left">
+          <div class="skill-cat"><h4>FRONTEND</h4>
+            <div class="chips"><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Tailwind CSS</span><span class="chip">Redux</span></div>
+          </div>
+          <div class="skill-cat"><h4>BACKEND</h4>
+            <div class="chips"><span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">MongoDB</span><span class="chip">Mongoose</span><span class="chip">JWT</span><span class="chip">REST APIs</span></div>
+          </div>
+          <div class="skill-cat"><h4>DEVOPS & TOOLS</h4>
+            <div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Vercel</span><span class="chip">Netlify</span><span class="chip">Postman</span><span class="chip">VS Code</span></div>
+          </div>
+          <div class="skill-cat"><h4>TESTING</h4>
+            <div class="chips"><span class="chip">Jest</span><span class="chip">Playwright</span><span class="chip">React Testing Library</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PROJECTS ═══════════════ -->
+  <section class="section proj-sec fullpage-section" id="projects">
+    <div class="proj-bg-animation"></div>
+    <div class="container">
+      <div class="proj-header">
+        <div class="sec-tag">My Work</div>
+        <h2 class="sec-h">Featured <span class="red-txt">Projects</span></h2>
+        <p class="proj-intro">Handpicked projects showcasing my expertise in modern web development</p>
+      </div>
+
+      <!-- Project Filters -->
+      <div class="proj-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="react">React</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="nextjs">Next.js</button>
+      </div>
+
+      <div class="proj-grid">
+        <!-- Project 1: LMS -->
+        <div class="proj-card" data-aos="fade-up" data-category="fullstack">
+          <div class="proj-img-wrap">
+            <div class="proj-img placeholder-img" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+              <span class="proj-icon">📚</span>
+            </div>
+            <div class="proj-overlay"><a href="#" class="btn btn-sm">👁 View</a></div>
+            <div class="visit-tag">FEATURED</div>
+          </div>
+          <div class="proj-body">
+            <h3>Learning Management System</h3>
+            <p class="proj-desc">A complete LMS platform with multi-role access, course management, and real-time enrollment tracking. Used by 500+ students.</p>
+            <div class="proj-feats">
+              <div>✨ Role-based Access (Admin, Instructor, Student)</div>
+              <div>✨ JWT Authentication &amp; Authorization</div>
+              <div>✨ Course Creation &amp; Enrollment</div>
+              <div>✨ Progress Tracking Dashboard</div>
+            </div>
+            <div class="chips chips-sm"><span class="chip">React</span><span class="chip">Node.js</span><span class="chip">MongoDB</span><span class="chip">Express</span><span class="chip">JWT</span></div>
+            <div class="proj-links">
+              <a href="#" class="btn btn-outline btn-sm">👁 Live Demo →</a>
+              <a href="https://github.com" target="_blank" class="btn btn-sm">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Kanban -->
+        <div class="proj-card" data-aos="fade-up" data-aos-delay="100" data-category="react">
+          <div class="proj-img-wrap">
+            <div class="proj-img placeholder-img" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+              <span class="proj-icon">📋</span>
+            </div>
+            <div class="proj-overlay"><a href="#" class="btn btn-sm">👁 View</a></div>
+            <div class="visit-tag">POPULAR</div>
+          </div>
+          <div class="proj-body">
+            <h3>Kanban Task Manager</h3>
+            <p class="proj-desc">A collaborative task management platform with drag-drop functionality and real-time updates for team collaboration.</p>
+            <div class="proj-feats">
+              <div>✨ Drag &amp; Drop Kanban Boards</div>
+              <div>✨ Real-time Collaboration via Socket.io</div>
+              <div>✨ Advanced Filtering &amp; Search</div>
+              <div>✨ Team Workspace Support</div>
+            </div>
+            <div class="chips chips-sm"><span class="chip">React</span><span class="chip">Socket.io</span><span class="chip">Node.js</span><span class="chip">Redux</span></div>
+            <div class="proj-links">
+              <a href="#" class="btn btn-outline btn-sm">👁 Live Demo →</a>
+              <a href="https://github.com" target="_blank" class="btn btn-sm">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: E-Commerce -->
+        <div class="proj-card" data-aos="fade-up" data-aos-delay="200" data-category="nextjs fullstack">
+          <div class="proj-img-wrap">
+            <div class="proj-img placeholder-img" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+              <span class="proj-icon">🛒</span>
+            </div>
+            <div class="proj-overlay"><a href="#" class="btn btn-sm">👁 View</a></div>
+            <div class="visit-tag">LATEST</div>
+          </div>
+          <div class="proj-body">
+            <h3>E-Commerce Platform</h3>
+            <p class="proj-desc">Full-featured e-commerce solution with Stripe payments, inventory management, and admin analytics dashboard.</p>
+            <div class="proj-feats">
+              <div>✨ Full Cart &amp; Stripe Checkout</div>
+              <div>✨ Admin Inventory Dashboard</div>
+              <div>✨ SSR with Next.js for SEO</div>
+              <div>✨ Order Tracking &amp; Analytics</div>
+            </div>
+            <div class="chips chips-sm"><span class="chip">Next.js</span><span class="chip">Stripe</span><span class="chip">MongoDB</span><span class="chip">Tailwind</span></div>
+            <div class="proj-links">
+              <a href="#" class="btn btn-outline btn-sm">👁 Live Demo →</a>
+              <a href="https://github.com" target="_blank" class="btn btn-sm">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: AI Chat Bot -->
+        <div class="proj-card" data-aos="fade-up" data-aos-delay="300" data-category="react fullstack">
+          <div class="proj-img-wrap">
+            <div class="proj-img placeholder-img" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+              <span class="proj-icon">🤖</span>
+            </div>
+            <div class="proj-overlay"><a href="#" class="btn btn-sm">👁 View</a></div>
+            <div class="visit-tag">AI POWERED</div>
+          </div>
+          <div class="proj-body">
+            <h3>AI Chat Bot Platform</h3>
+            <p class="proj-desc">Intelligent chatbot with NLP integration, conversation history, and multi-language support powered by OpenAI API.</p>
+            <div class="proj-feats">
+              <div>✨ OpenAI API Integration</div>
+              <div>✨ Conversation Memory System</div>
+              <div>✨ Multi-Language Support</div>
+              <div>✨ User Conversation History</div>
+            </div>
+            <div class="chips chips-sm"><span class="chip">React</span><span class="chip">OpenAI</span><span class="chip">Node.js</span><span class="chip">PostgreSQL</span></div>
+            <div class="proj-links">
+              <a href="#" class="btn btn-outline btn-sm">👁 Live Demo →</a>
+              <a href="https://github.com" target="_blank" class="btn btn-sm">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Social Network -->
+        <div class="proj-card" data-aos="fade-up" data-aos-delay="400" data-category="nextjs fullstack">
+          <div class="proj-img-wrap">
+            <div class="proj-img placeholder-img" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);">
+              <span class="proj-icon">👥</span>
+            </div>
+            <div class="proj-overlay"><a href="#" class="btn btn-sm">👁 View</a></div>
+            <div class="visit-tag">TRENDING</div>
+          </div>
+          <div class="proj-body">
+            <h3>Social Network Platform</h3>
+            <p class="proj-desc">Next-generation social platform with real-time notifications, media sharing, and social graph algorithms.</p>
+            <div class="proj-feats">
+              <div>✨ Real-time Notifications</div>
+              <div>✨ Media Upload &amp; CDN Integration</div>
+              <div>✨ Friend Network System</div>
+              <div>✨ Feed Algorithm &amp; Analytics</div>
+            </div>
+            <div class="chips chips-sm"><span class="chip">Next.js</span><span class="chip">Prisma</span><span class="chip">PostgreSQL</span><span class="chip">AWS S3</span></div>
+            <div class="proj-links">
+              <a href="#" class="btn btn-outline btn-sm">👁 Live Demo →</a>
+              <a href="https://github.com" target="_blank" class="btn btn-sm">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Weather App -->
+        <div class="proj-card" data-aos="fade-up" data-aos-delay="500" data-category="react">
+          <div class="proj-img-wrap">
+            <div class="proj-img placeholder-img" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+              <span class="proj-icon">🌤️</span>
+            </div>
+            <div class="proj-overlay"><a href="#" class="btn btn-sm">👁 View</a></div>
+            <div class="visit-tag">INTERACTIVE</div>
+          </div>
+          <div class="proj-body">
+            <h3>Advanced Weather Dashboard</h3>
+            <p class="proj-desc">Beautiful weather application with real-time data, forecasts, maps, and weather alerts using OpenWeather API.</p>
+            <div class="proj-feats">
+              <div>✨ Real-time Weather Data</div>
+              <div>✨ 7-Day Forecast System</div>
+              <div>✨ Interactive Maps Integration</div>
+              <div>✨ Weather Alerts &amp; Notifications</div>
+            </div>
+            <div class="chips chips-sm"><span class="chip">React</span><span class="chip">Mapbox</span><span class="chip">OpenWeather API</span><span class="chip">Redux</span></div>
+            <div class="proj-links">
+              <a href="#" class="btn btn-outline btn-sm">👁 Live Demo →</a>
+              <a href="https://github.com" target="_blank" class="btn btn-sm">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7: Video Streaming -->
+        <div class="proj-card" data-aos="fade-up" data-aos-delay="600" data-category="fullstack nextjs">
+          <div class="proj-img-wrap">
+            <div class="proj-img placeholder-img" style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);">
+              <span class="proj-icon">🎬</span>
+            </div>
+            <div class="proj-overlay"><a href="#" class="btn btn-sm">👁 View</a></div>
+            <div class="visit-tag">STREAMING</div>
+          </div>
+          <div class="proj-body">
+            <h3>Video Streaming Platform</h3>
+            <p class="proj-desc">Netflix-like platform with video streaming, quality adaptation, watch history, and personalized recommendations.</p>
+            <div class="proj-feats">
+              <div>✨ HLS/DASH Streaming</div>
+              <div>✨ Adaptive Bitrate Technology</div>
+              <div>✨ Watch History &amp; Progress</div>
+              <div>✨ ML-based Recommendations</div>
+            </div>
+            <div class="chips chips-sm"><span class="chip">Next.js</span><span class="chip">FFmpeg</span><span class="chip">MongoDB</span><span class="chip">Express</span></div>
+            <div class="proj-links">
+              <a href="#" class="btn btn-outline btn-sm">👁 Live Demo →</a>
+              <a href="https://github.com" target="_blank" class="btn btn-sm">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 8: Fitness Tracker -->
+        <div class="proj-card" data-aos="fade-up" data-aos-delay="700" data-category="fullstack react">
+          <div class="proj-img-wrap">
+            <div class="proj-img placeholder-img" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+              <span class="proj-icon">💪</span>
+            </div>
+            <div class="proj-overlay"><a href="#" class="btn btn-sm">👁 View</a></div>
+            <div class="visit-tag">HEALTH TECH</div>
+          </div>
+          <div class="proj-body">
+            <h3>Fitness Tracking App</h3>
+            <p class="proj-desc">Comprehensive fitness app with workout planning, calorie tracking, and social challenges for fitness enthusiasts.</p>
+            <div class="proj-feats">
+              <div>✨ Personalized Workout Plans</div>
+              <div>✨ Calorie &amp; Nutrition Tracking</div>
+              <div>✨ Social Challenges &amp; Leaderboards</div>
+              <div>✨ Health Analytics Dashboard</div>
+            </div>
+            <div class="chips chips-sm"><span class="chip">React</span><span class="chip">Node.js</span><span class="chip">MongoDB</span><span class="chip">Chart.js</span></div>
+            <div class="proj-links">
+              <a href="#" class="btn btn-outline btn-sm">👁 Live Demo →</a>
+              <a href="https://github.com" target="_blank" class="btn btn-sm">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 9: URL Shortener -->
+        <div class="proj-card" data-aos="fade-up" data-aos-delay="800" data-category="fullstack">
+          <div class="proj-img-wrap">
+            <div class="proj-img placeholder-img" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+              <span class="proj-icon">🔗</span>
+            </div>
+            <div class="proj-overlay"><a href="#" class="btn btn-sm">👁 View</a></div>
+            <div class="visit-tag">UTILITY</div>
+          </div>
+          <div class="proj-body">
+            <h3>URL Shortener Service</h3>
+            <p class="proj-desc">Fast and reliable URL shortening service with QR codes, analytics, and link management dashboard.</p>
+            <div class="proj-feats">
+              <div>✨ Custom Short URL Generation</div>
+              <div>✨ QR Code Generation</div>
+              <div>✨ Click Analytics &amp; Tracking</div>
+              <div>✨ Link Expiration Settings</div>
+            </div>
+            <div class="chips chips-sm"><span class="chip">React</span><span class="chip">Node.js</span><span class="chip">Redis</span><span class="chip">PostgreSQL</span></div>
+            <div class="proj-links">
+              <a href="#" class="btn btn-outline btn-sm">👁 Live Demo →</a>
+              <a href="https://github.com" target="_blank" class="btn btn-sm">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="proj-scroll-indicator">
+        <span class="scroll-text">← Explore More →</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CONTACT ═══════════════ -->
+  <section class="section contact-sec" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="sec-tag">📬 Get In Touch</div>
+        <h2 class="contact-title">Let's <span class="red-txt">Work Together</span></h2>
+        <p class="contact-sub">Have a project in mind? I'd love to hear from you. Let's build something amazing together.</p>
+        <div class="contact-btns">
+          <a href="mailto:muhammad.saadi@email.com" class="btn btn-primary btn-lg">💬 Contact Me →</a>
+          <a href="cv.pdf" download class="btn btn-yellow btn-lg">⬇ Download CV</a>
+        </div>
+        <div class="contact-cards">
+          <div class="cc"><span class="cc-ico">📧</span><span class="cc-lbl">Email</span><span class="cc-val">muhammad.saadi@email.com</span></div>
+          <div class="cc"><span class="cc-ico">📞</span><span class="cc-lbl">Phone</span><span class="cc-val">+92 300 0000000</span></div>
+          <div class="cc"><span class="cc-ico">📍</span><span class="cc-lbl">Location</span><span class="cc-val">Pakistan</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="#home" class="logo">&lt;Saadi/&gt;</a>
+      <p>&copy; 2025 Muhammad Saadi. Built with ❤️</p>
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
