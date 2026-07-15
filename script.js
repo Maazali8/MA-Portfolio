@@ -38,7 +38,7 @@ overlayLinks.forEach(link => {
 });
 
 // Typewriter Effect
-const roles = ['Frontend Developer', 'MERN Stack Expert', 'UI/UX Enthusiast', 'Web Architect'];
+const roles = ['Software Engineering Student', 'Front-End Developer', 'Java OOP Programmer', 'Web Designer'];
 let roleIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
